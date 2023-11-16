@@ -1,0 +1,99 @@
+
+<div class="container-g">
+  <app-header (sideNavToggled)="sideNavStatus = $event;" ></app-header>
+  <main>
+      <app-side-nav [sideNavStatus]="sideNavStatus"
+      [ngClass]="{'app-side-nav-open':sideNavStatus}" ></app-side-nav>    
+      <div class="display-area p-3" [ngClass]="{'display-area-shrink': sideNavStatus}">
+      <div *ngIf="reward_data">
+    <div class="card border-info mb-5" id="History"  >
+        <div class="card-header border-info mb-1" id="hd1">
+         Reward History
+        </div>
+        <div id ="card-box"*ngFor ="let item of reward_data" >
+        <div class="card-header" id ="boxes" ngFor=" let item of reward_data">
+            <tr>
+                <td class="roman">Date</td>
+                    
+                <td class="roman">Recycled item</td>
+               
+                <td class="roman"> Location</td>
+               
+                <td class="roman"> Coin Earned</td>
+            </tr>
+        </div>
+        <div class="card-body p-0" >
+            <tr>
+                <td> <p class="roman">{{item.Date}}</p> </td>
+                <td> <p class="roman">{{item.Recycled_items}}</p> </td>
+                <td> <p class="roman">{{item.Location}}</p> </td>
+                <td> <p class="roman">{{item.Coin_Earned}}</p> </td>
+             </tr>
+        </div>
+      </div>
+</div>
+      </div>
+      </div>
+  </main>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--   
+</div>
+    <h2>Date</h2>
+    <ul>
+      <li *ngFor="let date of reward_data">{{ date.Date }}</li>
+    </ul>
+  
+    <h2>Recyced Items</h2>
+    <ul>
+      <li *ngFor="let item of reward_data">{{ item?.Recycled_items }}</li>
+    </ul>
+    <h2>Location</h2>
+    <ul>
+      <li *ngFor="let location of reward_data">{{ location.Location }}</li>
+    </ul>
+    <h2>Coin Earned</h2>
+    <ul>
+      <li *ngFor="let coin of reward_data">{{ coin.Coin_Earned }}</li>
+    </ul>
+</div>
+
+   -->

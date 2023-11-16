@@ -1,0 +1,148 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupusers": [
+    {
+      "username": "grh",
+      "Phone": "7845124512",
+      "password": "Keyur123$",
+      "id": 1
+    },
+    {
+      "username": "kkkk",
+      "Phone": "1234567890",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "username": "kkkk12",
+      "Phone": "123456378",
+      "password": "12345",
+      "id": 3
+    }
+  ],
+  "rewards": [
+    {
+      "id": "101",
+      "Date": "12/07/2023",
+      "Recycled_items": "2",
+      "Location": "Mumbai",
+      "Coin_Earned": "3"
+    },
+    {
+      "id": "102",
+      "Date": "12/07/2023",
+      "Recycled_items": "2",
+      "Location": "Mumbai",
+      "Coin_Earned": "3"
+    },
+    {
+      "id": "103",
+      "Date": "12/07/2023",
+      "Recycled_items": "2",
+      "Location": "Mumbai",
+      "Coin_Earned": "3"
+    },
+    {
+      "id": "104",
+      "Date": "12/07/2023",
+      "Recycled_items": "2",
+      "Location": "Mumbai",
+      "Coin_Earned": "3"
+    },
+    {
+      "id": "105",
+      "Date": "12/07/2023",
+      "Recycled_items": "2",
+      "Location": "Mumbai",
+      "Coin_Earned": "3"
+    },
+    {
+      "id": "106",
+      "Date": "12/07/2023",
+      "Recycled_items": "2",
+      "Location": "Mumbai",
+      "Coin_Earned": "3"
+    },
+    {
+      "id": "107",
+      "Date": "12/07/2023",
+      "Recycled_items": "2",
+      "Location": "Mumbai",
+      "Coin_Earned": "3"
+    },
+    {
+      "id": "108",
+      "Date": "12/07/2023",
+      "Recycled_items": "2",
+      "Location": "Mumbai",
+      "Coin_Earned": "3"
+    },
+    {
+      "id": "109",
+      "Date": "12/07/2023",
+      "Recycled_items": "2",
+      "Location": "Mumbai",
+      "Coin_Earned": "3"
+    },
+    {
+      "id": "110",
+      "Date": "12/07/2023",
+      "Recycled_items": "2",
+      "Location": "Mumbai",
+      "Coin_Earned": "3"
+    },
+    {
+      "id": "111",
+      "Date": "12/07/2023",
+      "Recycled_items": "2",
+      "Location": "Mumbai",
+      "Coin_Earned": "3"
+    },
+    {
+      "id": "112",
+      "Date": "12/07/2023",
+      "Recycled_items": "2",
+      "Location": "Mumbai",
+      "Coin_Earned": "3"
+    },
+    {
+      "id": "113",
+      "Date": "12/07/2023",
+      "Recycled_items": "2",
+      "Location": "    Ahmedabad",
+      "Coin_Earned": "3"
+    },
+    {
+      "id": "114",
+      "Date": "11/10/2023",
+      "Recycled_items": "2",
+      "Location": "Ghandinagar",
+      "Coin_Earned": "5"
+    }
+  ],
+  "products":[{
+    "product_id" : "1",
+    "product_name" :"T-shirt",
+    "points" :"450"
+  },
+  {
+  "product_id" : "2",
+    "product_name" :"LaptopBag",
+    "points" :"1900"
+  },
+  {
+    "product_id" : "3",
+    "product_name" :"Sunglasses",
+    "points" :"2600"
+  }
+],
+  "profile": {
+    "name": "typicode"
+  }
+}

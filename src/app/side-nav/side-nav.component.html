@@ -1,0 +1,87 @@
+<div class="side-nav-content" [ngClass]="{'nav-list-open' :sideNavStatus}">
+   <ul class="nav-list ">
+       <li class="nav-list-item " *ngFor="let items of list">
+        <i class="{{items.icon}}"></i> 
+         <span >
+          <a routerLink ="{{items.a}}">{{items.name}}</a>
+         </span>
+       </li>
+   </ul>
+</div>
+
+<!-- <nav class="navbar navbar-dark bg-dark fixed-top">
+    < class="container-fluid"> -->
+      <!-- Toggle Button for the Left Sidebar -->
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    
+  </nav>
+  
+  <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Rewards</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/dashboard">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Market place</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reward History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Challenges</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+   
+<!-- <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        Toggle Button for the Left Sidebar
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Navbar text with an inline element
+      </span>
+    </div>
+  </nav>
+   -->
+        

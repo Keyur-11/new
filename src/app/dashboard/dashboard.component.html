@@ -1,0 +1,118 @@
+<div class="containar-fluid g-0">
+    <app-header (sideNavToggled)="sideNavStatus = $event;" ></app-header>
+    <main>
+        <app-side-nav [sideNavStatus]="sideNavStatus"
+        [ngClass]="{'app-side-nav-open':sideNavStatus}" ></app-side-nav>    
+        <div class="display-area p-3" [ngClass]="{'display-area-shrink': sideNavStatus}">
+            <!-- <p class="fs-1 fw-bold fst-italic"> main</p> -->
+            <div class="card" id ="total">
+                <div class="card-body" id ="icon">
+                    <i class="fa-solid fa-info fa-beat"></i>
+                  </div>
+                <div class="card-body">
+                  total collected coins :{{Coins}}
+                </div>
+                <div class="card-body">
+                    Recycled items : {{RecycledItems}}
+                </div>
+                <div class="card-body">
+                    <p> Count():</p>
+                  </div>
+              </div>
+              <!-- <div class="card" id="History" style="width: 50rem;">
+                <div class="card-header">
+                  Reward History
+                </div>
+                <div class="card-header">
+                <ul class="list-group ">
+                <table class="table">
+                <thead>
+                    <tr>
+                    <td class="roman">Date</td>
+                        
+                    <td class="roman">Recycled item</td>
+                   
+                    <td class="roman"> Location</td>
+                   
+                    <td class="roman"> Coin Earned</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                   <td> <p class="roman">12/5/67</p> </td>
+                   <td> <p class="roman">2</p> </td>
+                   <td> <p class="roman">Mumbai</p> </td>
+                   <td> <p class="roman">5</p> </td>
+                </tr>
+                </tbody>
+                     
+                    
+                
+            </table>
+                </ul>
+            
+                </div>
+                  <!-- <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li> 
+                </div>-->
+                <!-- <div class="card border-info mb-5" id="History" >
+                    <div class="card-header border-info mb-1" id="hd1">
+                     Reward History
+                    </div>
+                    <div class="card-header">
+                        <tr>
+                            <td class="roman">Date</td>
+                                
+                            <td class="roman">Recycled item</td>
+                           
+                            <td class="roman"> Location</td>
+                           
+                            <td class="roman"> Coin Earned</td>
+                        </tr>
+                    </div>
+                    <div class="card-body">
+                        <tr>
+                            <td> <p class="roman">12/5/67</p> </td>
+                            <td> <p class="roman">2</p> </td>
+                            <td> <p class="roman">Mumbai</p> </td>
+                            <td> <p class="roman">5</p> </td>
+                         </tr>
+                    </div>
+                  </div>
+                 -->
+                 <div *ngIf="reward_data">
+                    <div class="card border-info mb-5" id="History"  >
+                        <div class="card-header border-info mb-1" id="hd2">
+                         Reward History
+                        </div>
+                        <div id ="card-box"*ngFor ="let item of reward_data" >
+                        <div class="card-header" id ="boxes" ngFor=" let item of reward_data">
+                            <tr>
+                                <td class="roman1">Date</td>
+                                    
+                                <td class="roman" >Recycled item</td>
+                               
+                                <td class="roman"> Location</td>
+                               
+                                <td class="roman"> Coin Earned</td>
+                            </tr>
+                        </div>
+                        <div class="card-body p-0" >
+                            <tr>
+                                <td> <p class="roman1">{{item.Date}}</p> </td>
+                                <td> <p class="roman2">{{item.Recycled_items}}</p> </td>
+                                <td> <p class="roman3">{{item.Location}}</p> </td>
+                                <td> <p class="roman">{{item.Coin_Earned}}</p> </td>
+                             </tr>
+                        </div>
+                      </div>
+                    </div>
+              
+        </div>
+       
+        </div>
+    </main>
+   
+    
+</div>

@@ -1,0 +1,31 @@
+<!-- <nav class="navbar navbar-expand navbar-dark bg-dark px-2">
+    <div class="side-nav-button p-2 me-3 text-light">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <a class="navbar-brand mx-4 text-light" href="#">
+      <img src="../../assets/logo1.png" alt="Your Logo">
+    </a>
+    <a class="navbar-brand text-light" href="#">Rewards</a>
+    <div class="d-flex me-5  align-items-center">
+        <i class="fa-regular fa-qrcode fa-beat"></i>
+        <!-- <span class="text-light">Keyur</span> User Name -->
+      <!-- </div>
+  </nav> --> 
+  <nav class="navbar navbar-expand navbar-dark bg-dark px-2">
+    <div class="side-nav-button p-2 me-3 text-light" (click)="sideNavToggle()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <a class="navbar-brand mx-4 text-light" href="#">
+      <img src="../../assets/logo1.png" alt="Your Logo">
+    </a>
+    <a class="navbar-brand text-light" href="#">Rewards</a>
+    <a class="navbar-brand text-light" routerLink="/store">Store</a>
+
+    <div class="d-flex  align-items-center ms-auto">
+      <i class="fa-solid fa-qrcode text-light mr-2"></i> 
+      <span class="text-light p-3" id ="login">Keyur</span>
+      
+    </div>
+  </nav>
+  
+   

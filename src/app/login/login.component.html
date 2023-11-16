@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-centre">
+                    <h1>Login</h1>
+                    <h6>Please enter Phone no and password !!</h6>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                          <input formControlName="Phone" type="tel" class="form-control" id="exampleInputEmail1" required aria-describedby="Phone">
+                          <div id="Phone" class="form-text">We'll never share your Phone No with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                         <div class="x">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                         </div>
+                </form> 
+                <a style="color: rgb(255, 0, 0); margin-top: 10px;"  routerLink="/signup">New user? click to signup!!</a>
+
+            </div>
+        </div>
+    </div>
+</div>

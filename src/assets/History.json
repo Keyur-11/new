@@ -1,0 +1,9 @@
+{
+    "Date":[
+        {"id":1, "date": "12/8/2023"}
+
+    ],
+    "Recycled_items" :[2],
+    "Location": ["Mumbai"],
+    "Coin_Earned" : [3]
+}

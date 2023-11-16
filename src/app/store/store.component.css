@@ -1,0 +1,76 @@
+.example-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+    background: red;
+    margin-top: 0px; 
+
+  }
+  /* .black-boader{
+    /* border:1px solid black; */
+
+app-header{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 4rem;
+    z-index: 2;
+}
+main{
+    position: absolute;
+    width: 100%;
+    top: 4rem;
+    z-index:1;
+}
+app-side-nav{
+    position: absolute;
+    left:0rem;
+    width:0px;
+    height: calc(100vh - 4rem);
+    box-shadow: 0px opx 10px rgba(0,0,0,0.5);
+    background-color: rgba(34,34,34,1);
+    border-top:1px solid white;
+    overflow-x: hidden ;
+    white-space: nowrap;
+}
+.app-side-nav-open{
+    width :250px;
+
+}
+.display-area{
+    position: absolute;
+    left:60px;
+    width: calc(100% - 250px);
+}
+.display-area-shrink {
+    width :calc(100% - 250px);
+    left:250px;
+}
+hd1{
+    background: red;
+}
+
+#icon{
+    text-align: end;
+}
+
+#total{
+    width: 300px;
+    background-color: aqua;
+}
+#History{
+    margin-top: 10px;
+    width: max-content;
+}
+.roman{
+    /* padding: 20px; */
+    margin: 10px;
+    padding-left: 80px; 
+};
+.roman1 {
+    padding-left: 0px;
+}
+#hd2{
+    text-align: center;
+  }
+
+
