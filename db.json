@@ -24,6 +24,12 @@
       "Phone": "123456378",
       "password": "12345",
       "id": 3
+    },
+    {
+      "username": "Rocky",
+      "Phone": "9824008141",
+      "password": "12345",
+      "id": 4
     }
   ],
   "rewards": [
@@ -126,22 +132,23 @@
       "Coin_Earned": "5"
     }
   ],
-  "products":[{
-    "product_id" : "1",
-    "product_name" :"T-shirt",
-    "points" :"450"
-  },
-  {
-  "product_id" : "2",
-    "product_name" :"LaptopBag",
-    "points" :"1900"
-  },
-  {
-    "product_id" : "3",
-    "product_name" :"Sunglasses",
-    "points" :"2600"
-  }
-],
+  "products": [
+    {
+      "product_id": "1",
+      "product_name": "T-shirt",
+      "points": "450"
+    },
+    {
+      "product_id": "2",
+      "product_name": "LaptopBag",
+      "points": "1900"
+    },
+    {
+      "product_id": "3",
+      "product_name": "Sunglasses",
+      "points": "2600"
+    }
+  ],
   "profile": {
     "name": "typicode"
   }
