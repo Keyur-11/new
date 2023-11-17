@@ -4,7 +4,8 @@
     <main>
         <app-side-nav [sideNavStatus]="sideNavStatus"
         [ngClass]="{'app-side-nav-open':sideNavStatus}" ></app-side-nav>    
-        <div class="display-area p-3" [ngClass]="{'display-area-shrink': sideNavStatus}">
+        <!-- <div class="display-area p-3" ngClass="{'display-area-shrink': sideNavStatus}"> -->
+          <div class="display-area p-3" [ngClass]="{'display-area-shrink': sideNavStatus}">
 <mat-card class="example-card">
     <mat-card-header>
       <mat-card-title-group>
@@ -28,7 +29,7 @@
   <mat-card class="example-card">
     <mat-card-header>
       <mat-card-title-group>
-        <mat-card-title>LaptopBag</mat-card-title>
+        <mat-card-title></mat-card-title>
         <mat-card-subtitle>Points:1900</mat-card-subtitle>
         <img mat-card-lg-image src="../../assets/LaptopBag.jpg" >
       </mat-card-title-group>

@@ -7,7 +7,7 @@
   }
   /* .black-boader{
     /* border:1px solid black; */
-
+/* 
 app-header{
     position: fixed;
     width: 100%;
@@ -44,7 +44,7 @@ app-side-nav{
 .display-area-shrink {
     width :calc(100% - 250px);
     left:250px;
-}
+} */
 hd1{
     background: red;
 }
@@ -72,5 +72,41 @@ hd1{
 #hd2{
     text-align: center;
   }
-
+  app-header{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 4rem;
+    z-index: 2;
+  }
+  main{
+    position: absolute;
+    width: 100%;
+    top: 4rem;
+    z-index:1;
+  }
+  .display-area{
+    position: absolute;
+    left: 60px;
+    width: calc(100% - 250px);
+  }
+  .display-area-shrink {
+    width :calc(100% - 250px);
+    left:250px;
+  }
+  app-side-nav{
+    position: absolute;
+    left:0rem;
+    width:0px;
+    height: calc(100vh - 4rem);
+    box-shadow: 0px opx 10px rgba(0,0,0,0.5);
+    background-color: rgba(34,34,34,1);
+    border-top:1px solid white;
+    overflow-x: hidden ;
+    white-space: nowrap;
+  }
+  .app-side-nav-open{
+    width :250px;
+  
+  }
 
