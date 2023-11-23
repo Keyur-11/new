@@ -1,34 +1,97 @@
+<main class ="reward">
 <div class="container">
+   <div class="card">
     <div class="row">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="text-centre">
+      <div class="col-md-6 img-container">
+        <img
+          src="../../assets/signIn1.png"
+          alt="Reward_machine"
+          class="img-fluid text-center-img"
+        />
+      </div>
+        <div class="col-md-6 pe-1">
+            <div class="glass">
+                <div class="text-center">
                     <h1>Sign Up</h1>
-                    <h6>Please fill the details below !!</h6>
+                    
                 </div>
                 <form>
                     <form [formGroup]="signupForm" (ngSubmit)="signUp()">
-                        <div class="mb-3">
-                            <label for="exampleInputUsername1" class="form-label">User Name</label>
-                            <input formControlName="username" type ="text" class="form-control" id="exampleInputEmail1" required aria-describedby="username">
-                          </div>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                          <input formControlName="Phone"type="tel" class="form-control" id="exampleInputPhone" required aria-describedby="Phone">
-                          <div id="Phone" class="form-text">We'll never share your Phone No with anyone else.</div>
+                        <div class="form-floating mb-3">
+                          <!-- <div class="form-floating mb-3"> -->
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="floatingInput"
+                              placeholder="name@example.com"
+                              formControlName="Username"
+                            />
+                            <label for="floatingInput">User Name</label>
+                        
+                            <!-- <label for="exampleInputUsername1" class="form-label">User Name</label>
+                            <input formControlName="username" type ="text" class="form-control" id="exampleInputEmail1" required aria-describedby="username"> -->
+                            <small *ngIf="Username.invalid" class="">
+                            
+                            <div class="error" *ngIf="Username.errors?.['required']">Name is required</div>
+                            <div class="error" *ngIf="Username.errors?.['pattern']">Enter valid Username</div>
+                        
+                        </small>
+                      </div>
+                          <!-- </div> -->
+                        <div class="form-floating mb-3">
+                          <!-- <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                          <input formControlName="Phone"type="tel" class="form-control" id="exampleInputPhone" required aria-describedby="Phone"> -->
+                          <input
+                          type="tel"
+                          class="form-control"
+                          id="floatingInput"
+                          placeholder="name@example.com"
+                          formControlName="phone_no"
+                  
+                        />
+                        <label for="floatingInput">Phone No</label>
+                          <small *ngIf="phone_no.invalid" class="">
+
+                            <div class="error" *ngIf="phone_no.errors?.['required']">Phone no is required</div>
+                            <div class="error" *ngIf="phone_no.errors?.['minLength']">Minimum phone no lenght shold be 10 digits!</div>
+                            <div class="error" *ngIf="phone_no.errors?.['maxLength']">Maximum phone no lenght shold be 10 digits!</div>
+
+                        </small>
+                  
                         </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input formControlName="password"type="password" class="form-control" id="exampleInputPassword1" required>
+                        <div class="form-floating mb-3">
+                          <!-- <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input formControlName="password"type="password" class="form-control" id="exampleInputPassword1" required> -->
+                          <div class="form-floating">
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="floatingPassword"
+                            placeholder="Password"
+                            formControlName=" Password"
+                          />
+                <label for="floatingPassword">password</label>
+              </div>
+                          <small *ngIf="password.invalid" class="">
+
+                            <div class="error" *ngIf="password.errors?.['required']">Password is required</div>
+                            <div class="error" *ngIf="password.errors?.['minLength']">Minimum characters shold be 10 digits!</div>
+
+                        </small>
                         </div>
                          <div class="x">
-                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                        <button type="submit" class="btn btn-primary "  >Sign Up</button>
                          </div>
+
                       </form> 
-                      <a style="color: rgb(255, 0, 0); margin-top: 10px;"  routerLink="/login">Already registered? click to login!!</a>
+                      <div class ="new">
+                      <a style="color: rgb(15, 15, 15); margin-top: 10px;"  routerLink="/login">Already registered? click to login!!</a>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
+    </div>
 </div>
+</main>
 

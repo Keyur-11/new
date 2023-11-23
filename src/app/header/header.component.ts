@@ -1,4 +1,5 @@
 import { Component,OnInit, Output ,EventEmitter} from '@angular/core';
+import { AuthService } from '../shared/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,7 @@ export class HeaderComponent implements OnInit {
   // @Output() Login = new EventEmitter<string>();
   // LoginStatus:string = "";
   
- constructor(){}
+ constructor(private authService : AuthService){}
   ngOnInit(): void {
     
   }
@@ -20,5 +21,10 @@ export class HeaderComponent implements OnInit {
    this.sideNavToggled.emit(this.menuStatus);
 
   }
+  //  getUserName(){
+  //   this.authService.signUp().subscribe(
+
+  //   )
+   
 
 }

@@ -1,28 +1,69 @@
-<div class="container">
-    <div class="row">
+<main class="reward">
+  <div class="container">
+    
+      <div class="card">
+        <div class="row">
+        <div class="col-md-6 img-container">
+          <img
+            src="../../assets/signIn1.png"
+            alt="Reward_machine"
+            class="img-fluid text-center-img"
+          />
+        </div>
+
         <div class="col-md-6">
-            <div class="card">
-                <div class="text-centre">
-                    <h1>Login</h1>
-                    <h6>Please enter Phone no and password !!</h6>
-                </div>
-                <form [formGroup]="loginForm" (ngSubmit)="login()">
-                        <div class="mb-3">
+          <div class="glass">
+            <div class="text-center">
+              <h1>Sign In</h1>
+              <!-- <h6>Please enter Phone no and password !!</h6> -->
+            </div>
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+              <div class="form-floating mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Phone No</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Password</label>
+              </div>
+              <!-- <div class="mb-3 text-start">
                           <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                          <input formControlName="Phone" type="tel" class="form-control" id="exampleInputEmail1" required aria-describedby="Phone">
+                          <input formControlName="Phone" type="tel" class="form-control form-control-sm" id="exampleInputEmail1" required aria-describedby="Phone">
                           <div id="Phone" class="form-text">We'll never share your Phone No with anyone else.</div>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 text-start">
                           <label for="exampleInputPassword1" class="form-label">Password</label>
                           <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                         <div class="x">
-                        <button type="submit" class="btn btn-primary">Login</button>
-                         </div>
-                </form> 
-                <a style="color: rgb(255, 0, 0); margin-top: 10px;"  routerLink="/signup">New user? click to signup!!</a>
-
-            </div>
+                        </div> -->
+              <div class="x">
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                >
+                  Login
+                </button>
+              </div>
+              <div class="new">
+                <a
+                  style="color: rgb(20, 19, 19); margin-top: 10px"
+                  routerLink="/signup"
+                  >New user? click to signup!!</a
+                >
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+</main>

@@ -23,6 +23,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { StoreComponent } from './store/store.component';
 import {MatCardModule} from '@angular/material/card';
 import { CheckoutComponent } from './checkout/checkout.component'
+import { ToastModule } from 'primeng/toast';
+import { MessageService} from 'primeng/api';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,9 +51,10 @@ import { CheckoutComponent } from './checkout/checkout.component'
     MatToolbarModule,
     MatButtonModule,
     MatDialogModule,
-    MatCardModule
+    MatCardModule,
+    ToastModule,
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
